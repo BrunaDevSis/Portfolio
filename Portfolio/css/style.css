@@ -1,0 +1,447 @@
+* {
+  z-index: 5;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+.mostrar {
+  opacity: 0;
+}
+
+.fundo-escuro {
+  background-color: #0b2644;
+  color: white;
+  margin-left: 0px;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.fundo-escuro h1 {
+  text-align: center;
+  margin-top: -90px;
+}
+
+.fundo-claro {
+  background-color: #004FA1;
+  color: white;
+  margin-left: 0px;
+  width: 100%;
+  padding-top: 120px;
+}
+
+.fundo-claro section {
+  padding: 0px !important;
+}
+
+.fundo-claro h1 {
+  text-align: center;
+  margin-top: -90px;
+}
+
+.row {
+  width: 100%;
+  margin-left: 0px;
+}
+
+
+
+/* Rodapé */
+.rodape {
+  padding: 80px;
+}
+
+.btn-rodape {
+  background: none;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.btn-rodape:hover {
+  color: #004FA1;
+  transition: all 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.afastar {
+  margin-right: 50px;
+}
+
+.destaque {
+  box-shadow: 1px 1px 50px 5px black;
+}
+
+.linha-redes-sociais {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.linha-redes-sociais button {
+  margin-bottom: 10px;
+}
+
+.alinhar {
+  display: inline-block;
+}
+
+.whatsapp {
+  background-color: #3b9841;
+  border-radius: 100%;
+  border: none;
+}
+
+.instagram {
+  background-color: #ac2bac;
+  border-radius: 100%;
+  border: none;
+}
+
+.github {
+  background-color: #333333;
+  border-radius: 100%;
+  border: none;
+}
+
+.linkedin {
+  background-color: #0082ca;
+  border-radius: 100%;
+  border: none;
+}
+/*  ------------ */
+
+
+
+/* Navbar e topo */
+nav {
+  padding: 20px !important;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  margin: 0px 30px 0px 0px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  text-decoration: none;
+  position: relative;
+}
+
+nav button::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #004FA1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+nav button:hover::after {
+  width: 100%;
+}
+
+.dividir {
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  margin-left: 0px;
+  box-shadow: 1px 1px 30px 10px rgb(0, 0, 0);
+  position: absolute;
+  z-index: 1;
+}
+
+.inicio {
+  background-image: url("/img/fundo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+.foto-inicio {
+  margin-top: 400px;
+  padding: 80px 20px 20px 20px;
+  width: 70%;
+  border-radius: 10px;
+  background-color: #F0F0F0;
+  box-shadow: 1px 1px 30px 10px black;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.foto {
+  margin-top: 160px;
+  background-image: url("/img/minha-foto2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 15%;
+  height: 30%;
+  border-radius: 100%;
+  left: 41%;
+  transform: translate(-41, -41);
+  background-color: #F0F0F0;
+  position: absolute;
+  text-align: center;
+  z-index: 5;
+}
+
+/*  ------------ */
+
+
+
+/* Section "Portfólio" */
+.card-portfolio {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-portfolio img {
+  min-width: 100% !important;
+  min-height: 100% !important;
+}
+
+.linha-portfolio {
+  padding-top: 20px;
+}
+
+.linha-portfolio a {
+  width: 100%;
+}
+
+/*   ------------  */
+
+
+
+/* Section "Serviços" e "Hablilidades" */
+.card {
+  margin: 20px;
+  width: 400px;
+  color: black;
+  text-align: justify;
+  border-radius: 12px;
+  box-shadow: 1px 1px 30px 1px rgb(0, 0, 0);
+}
+
+.card:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: rgb(219, 232, 255);
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.card-icone {
+  text-align: center;
+  font-size: 30px;
+}
+
+.card-habilidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 250px;
+  height: 250px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 1px 1px 30px 1px rgb(0, 0, 0);
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translatey(0)
+  }
+
+  50% {
+    transform: translatey(-20px)
+  }
+}
+
+.card-habilidades {
+  animation: float 2s ease-in-out infinite;
+}
+
+.card-habilidades img {
+  width: 90%;
+  height: 90%;
+}
+
+/*  ------------  */
+
+
+
+/* Section "Sobre mim" */
+.foto-2 {
+  height: 400px;
+  margin-top: 40px;
+}
+
+.col-sobre-mim {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.col-sobre-mim h5 {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.col-sobre-mim h4 {
+  margin-top: 20px;
+}
+
+.icones {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.descricao {
+  display: inline-block;
+}
+
+/* ------------  */
+
+
+
+/* Responsividade */
+@media (max-width:992px) {
+  .foto {
+    width: 20%;
+
+  }
+
+  .rodape div {
+    display: block !important;
+  }
+
+  .sessoes-rodape {
+    margin-top: 30px;
+  }
+
+  .afastar {
+    margin-right: 0px !important;
+  }
+}
+
+@media (min-width:700px) and (max-width:1024px) {
+  .foto-2 {
+    width: 50%;
+  }
+}
+
+@media (min-width:992px) and (max-width:1246px) {
+  .foto-2 {
+    width: 100%;
+  }
+}
+
+@media (min-width:500px) and (max-width:622px) {
+  .foto-2 {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width:700px) {
+  .foto {
+    width: 30%;
+    left: 35%;
+    transform: translate(-35, -35);
+  }
+}
+
+@media (max-width:400px) {
+  .card {
+    width: 80% !important;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .foto {
+    width: 50%;
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width:500px) {
+  .foto-2 {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .foto {
+    width: 40%;
+    left: 30%;
+    transform: translate(-30, -30);
+  }
+
+
+  .alinhar {
+    display: block !important;
+    margin-left: 0px !important;
+  }
+
+  .rodape {
+    padding: 10px;
+  }
+
+}
+
+@media (max-width:622px) {
+  .foto-inicio {
+    padding: 80px 20px 20px 20px;
+  }
+}
+
+@media (min-width:400px) and (max-width:622px) {
+  .foto-inicio {
+    padding: 80px 20px 20px 20px;
+  }
+
+  .foto {
+    height: 170px;
+    margin-top: 150px !important;
+  }
+}
+
+@media (min-width:992px) {
+  .foto {
+    left: 43%;
+    transform: translate(-43, -43);
+  }
+}
+
+@media (max-width:767px) {
+  .card {
+    width: 250px !important;
+    margin: 50px 70px 10px 70px;
+  }
+
+  .card img {
+    min-height: 200px;
+    max-height: 200px;
+  }
+}
+/* ------------  */

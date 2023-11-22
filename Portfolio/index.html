@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Link do Bootstrap e Jquery -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- ////////// -->
+
+  <link rel="icon" href="/img/portfolio-profissional.png">
+  <!-- Link da biblioteca de animações -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- ////////// -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bruna Dev</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light navbarScroll">
+    <div class="nav">
+      <img src="/img/portfolio-profissional.png" alt="" srcset="" data-aos="fade-down">
+      <div class="container-fluid">
+        <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button class="nav-link" onclick="redirecionar_portfolio()">Portfólio</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" onclick="redirecionar_habilidades()">Habilidades</button>
+            </li>
+            <li>
+              <button class="nav-link" onclick="redirecionar_sobre_mim()">Sobre Mim</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" id="btn-contato">Contato</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="inicio" id="inicio">
+    <div class="row">
+      <div class="col-lg-6 ml-auto">
+        <div class="foto" data-aos="fade-up"></div>
+        <div class="foto-inicio">
+          <h1 class="mostrar">Olá, eu sou a Bruna</h1>
+          <h3 class="mostrar">Sou uma Desenvolvedora Fullstack de Juiz de Fora</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dividir"></div>
+  <div class="fundo-escuro">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="d-flex justify-content-center">
+          <img data-aos="fade-up" src="img/minha-foto.jpg" class="foto-2" alt="" srcset="" id="sobre_mim">
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="col-sobre-mim">
+          <h2 data-aos="fade-up">Sobre mim</h2>
+          <h4 data-aos="fade-up">Natural de Juiz de Fora, Minas Gerais, comecei na programação em 2021.<h4>
+              <h5 data-aos="fade-up">
+                <div class="icones"><i class="bi bi-person-circle"></i></div>Bruna Cristina
+              </h5><br>
+              <h5 data-aos="fade-up">
+                <div class="icones"><i class="bi bi-calendar-check"></i></div>18 anos
+              </h5><br>
+              <h5 data-aos="fade-up">
+                <div class="icones"><i class="bi bi-display"></i></div>Desenvolvedora Fullstack
+              </h5>
+              <h4 data-aos="fade-up">
+                Concluí um curso Técnico em Desenvolvimento de Sistemas em Abril de
+                2023.
+                Nele, aprendi uma variedade de matérias e conheci professores muito habilidosos que me ajudaram a criar
+                tanto apreço pela área. Hoje, estou fazendo mais um curso de programação para expandir meus
+                conhecimentos
+                e
+                estou á procura de meu primeiro emprego!
+              </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fundo-claro">
+    <div class="row d-flex justify-content-center">
+      <h1 class="mostrar">Qualidades</h1>
+      <div class="card">
+        <div class="card-body">
+          <div class="card-icone">
+            <i class="bi bi-brush"></i>
+          </div>
+          <h2 class="card-title" data-aos="fade-up">Criatividade</h2>
+          <p data-aos="fade-up">Com minha vontade de aprender cada vez mais, não finalizo um projeto
+            pessoal
+            até que tenha colocado todas as idéias em prática.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="card-icone">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <h2 class="card-title" data-aos="fade-up">Comunicação</h2>
+          <p data-aos="fade-up">Experiência em trabalho em equipe. Facilidade em dialogar e estar
+            disponível
+            para eventuais dúvidas que eu possa ajudar.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="card-icone">
+            <i class="bi bi-person-workspace"></i>
+          </div>
+          <h2 class="card-title" data-aos="fade-up">Comprometimento</h2>
+          <p data-aos="fade-up">Esforço e dedicação para realizar o cumprimento de prazos, horários
+            e entregas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-icone">
+            <i class="bi bi-ui-checks"></i>
+          </div>
+          <h2 class="card-title" data-aos="fade-up">Organização</h2>
+          <p data-aos="fade-up">Hábito de manter códigos limpos e bem estruturados, com comentários atualizados ao longo
+            da execução.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="card-icone">
+            <i class="bi bi-lightbulb-fill"></i>
+          </div>
+          <h2 class="card-title" data-aos="fade-up">Recepção a feedbacks</h2>
+          <p data-aos="fade-up">Procuro sempre colocar boas idéias em prática, estando aberta a comentários construtivos e
+            evoluindo
+            com eles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fundo-claro">
+    <div class="row d-flex justify-content-center">
+      <h1 class="mostrar" id="habilidades">Habilidades</h1>
+      <div class="card-habilidades">
+        <img src="/img/html-img.png" alt="" srcset="" class="mostrar">
+      </div>
+      <div class="card-habilidades">
+        <img src="/img/css-img.png" alt="" srcset="" class="mostrar">
+      </div>
+      <div class="card-habilidades">
+        <img src="/img/js-img.png" alt="" srcset="" class="mostrar">
+      </div>
+      <div class="card-habilidades">
+        <img src="/img/php-img.png" alt="" srcset="" class="mostrar">
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="card-habilidades">
+        <img src="/img/c-img.png" alt="" srcset="" class="mostrar">
+      </div>
+      <section class="card-habilidades">
+        <img src="/img/react-img.png" alt="" srcset="" class="mostrar">
+      </section>
+    </div>
+  </div>
+
+
+  <div class="fundo-escuro">
+    <div class="row d-flex justify-content-center">
+      <h1 class="mostrar" id="portfolio">Portfólio</h1>
+      <div class="card mb-3">
+        <div class="card-portfolio">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/img/1.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" data-aos="fade-up">Codi Quiz</h5>
+                <p class="card-text" data-aos="fade-up">Um quiz com temática RPG sobre HTML, CSS, Javascript e React!
+                </p>
+                <div class="row border-top">
+                  <div class="linha-portfolio">
+                    <a href="https://quizcodiacademy.netlify.app/" class="btn btn-primary" target="_blank">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-portfolio">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/img/cobra.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" data-aos="fade-up">Snake Game</h5>
+                <p class="card-text" data-aos="fade-up">O famoso e amado jogo da cobrinha feito com Javascript puro!</p>
+                <div class="row border-top">
+                  <div class="linha-portfolio">
+                    <a href="https://snakebrunadeveloper.netlify.app/" class="btn btn-primary" target="_blank">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-portfolio">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/img/dino.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" data-aos="fade-up">Dino</h5>
+                <p class="card-text" data-aos="fade-up">Réplica do jogo que quando estamos offline, é o nosso melhor
+                  companheiro!</p>
+                <div class="row border-top">
+                  <div class="linha-portfolio">
+                    <a href="https://dinobrunadeveloper.netlify.app/" class="btn btn-primary" target="_blank">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-light text-black">
+    <div class="destaque">
+      <div class="text-left p-3">
+        <div class="rodape">
+          <div class="row d-flex justify-content-center">
+            <div class="col">
+              <ul class="nav flex-column">
+                <h5>Sessões</h5>
+                <li class="nav-item"><button class="btn-rodape" id="btn-inicio">Início</button></li>
+                <li class="nav-item"><button class="btn-rodape" onclick="redirecionar_sobre_mim()">Sobre
+                    Mim</button>
+                </li>
+                <li class="nav-item"><button class="btn-rodape"
+                    onclick="redirecionar_habilidades()">Habilidades</button>
+                </li>
+                <li class="nav-item"><button class="btn-rodape" onclick="redirecionar_portfolio()">Portfólio</button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <div class="sessoes-rodape">
+                <ul class="nav flex-column">
+                  <h5>Detalhes</h5>
+                  <div class="afastar">
+                    <p class="card-text">Desejo ampliar meus conhecimentos cada vez mais e iniciar minha carreira
+                      profissional o quanto antes! Se tiver alguma proposta, mande uma mensagem!</p>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="sessoes-rodape">
+                <div class="card-rodape">
+                  <div class="card-header">
+                    <h5 id="contato">Contato</h5>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Fale diretamente comigo clicando no botão abaixo:</p>
+                    <a href="mailto:brunasist@gmail.com" class="btn btn-primary">Enviar E-mail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="linha-redes-sociais">
+      <div class="container-center p-4 pb-0">
+        <div class="text-center p-3">
+          <section class="mb-4">
+            <button class="whatsapp">
+              <a class="btn text-white btn-floating m-1" href="https://wa.me/553298046489" role="button"><i
+                  class="bi bi-whatsapp"></i></a>
+            </button>
+            <button class="instagram">
+              <a class="btn text-white btn-floating m-1" href="https://www.instagram.com/brunaburu_s/" role="button"><i
+                  class="bi bi-instagram"></i></a>
+            </button>
+            <button class="linkedin">
+              <a class="btn text-white btn-floating m-1" href="https://www.linkedin.com/in/bruna-souza-906354272/"
+                role="button"><i class="bi bi-linkedin"></i></a>
+            </button>
+            <button class="github">
+              <a class="btn text-white btn-floating m-1" href="https://github.com/BrunaDevSis" role="button"><i
+                  class="bi bi-github"></i></a>
+            </button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link da biblioteca de animações -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- ////////// -->
+
+  <script src="js/script.js"></script>
+
+  <!-- Link do Bootstrap e Jquery -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <!-- ////////// -->
+</body>
+
+</html>
